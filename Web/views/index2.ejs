@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="kor">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <script>
+        // key input checker
+        function checkEnter(event) {
+            if (event.key === 'Enter') {
+                console.log('엔터눌림.');
+                send_text();
+            }
+        }
+
+        // 서버 응답을 받고 페이지 리디렉션을 수행하는 함수
+        function handleServerResponse(responseData) {
+            console.log('서버 응답:', responseData);
+            // 페이지를 리디렉션
+            window.location.href = 'http://localhost:5400/showtexts/?pred_class=' + responseData;
+        }
+
+        // shibal send Get query of input_text content
+        function send_text() {
+            // getElementByClassName은 배열이기에 인덱싱을 해야함.
+            var inputText = document.getElementsByClassName('input_box')[0].value;
+
+            // 서버로 GET 요청을 보내는 fetch 사용
+            fetch("http://localhost:5400/input_send/?text=" + inputText)
+                .then(response => response.text())
+                .then(data => {
+                    handleServerResponse(data); // 서버 응답을 처리하고 페이지를 리디렉션
+                })
+                .catch(error => {
+                    console.error('오류 발생:', error);
+                });
+        }
+    </script>
+
+    <link rel="stylesheet" href="style_page2.css">
+</head>
+
+<body class="index2.body">
+    <div class="body">
+        <div class="img"></div>
+
+        <div class="title">뭔말하려고했더랑?</div>
+
+        <div class="quest1"><i class="fa-solid fa-question fa-beat fa-2xl" style="color: #8692a7;"></i><i
+                class="fa-solid fa-question fa-beat fa-2xl" style="color: #8692a7;"></i><i
+                class="fa-solid fa-question fa-beat fa-2xl" style="color: #8692a7;"></i><i
+                class="fa-solid fa-question fa-beat fa-2xl" style="color: #8692a7;"></i><i
+                class="fa-solid fa-question fa-beat fa-2xl" style="color: #8692a7;"></i><i
+                class="fa-solid fa-question fa-beat fa-2xl" style="color: #8692a7;"></i><i
+                class="fa-solid fa-question fa-beat fa-2xl" style="color: #8692a7;"></i><i
+                class="fa-solid fa-question fa-beat fa-2xl" style="color: #8692a7;"></i><i
+                class="fa-solid fa-question fa-beat fa-2xl" style="color: #8692a7;"></i><i
+                class="fa-solid fa-question fa-beat fa-2xl" style="color: #8692a7;"></i><i
+                class="fa-solid fa-question fa-beat fa-2xl" style="color: #8692a7;"></i><i
+                class="fa-solid fa-question fa-beat fa-2xl" style="color: #8692a7;"></i><i
+                class="fa-solid fa-question fa-beat fa-2xl" style="color: #8692a7;"></i><i
+                class="fa-solid fa-question fa-beat fa-2xl" style="color: #8692a7;"></i><i
+                class="fa-solid fa-question fa-beat fa-2xl" style="color: #8692a7;"></i><i
+                class="fa-solid fa-question fa-beat fa-2xl" style="color: #8692a7;"></i><i
+                class="fa-solid fa-question fa-beat fa-2xl" style="color: #8692a7;"></i><i
+                class="fa-solid fa-question fa-beat fa-2xl" style="color: #8692a7;"></i><i
+                class="fa-solid fa-question fa-beat fa-2xl" style="color: #8692a7;"></i><i
+                class="fa-solid fa-question fa-beat fa-2xl" style="color: #8692a7;"></i><i
+                class="fa-solid fa-question fa-beat fa-2xl" style="color: #8692a7;"></i><i
+                class="fa-solid fa-question fa-beat fa-2xl" style="color: #8692a7;"></i><i
+                class="fa-solid fa-question fa-beat fa-2xl" style="color: #8692a7;"></i><i
+                class="fa-solid fa-question fa-beat fa-2xl" style="color: #8692a7;"></i><i
+                class="fa-solid fa-question fa-beat fa-2xl" style="color: #8692a7;"></i><i
+                class="fa-solid fa-question fa-beat fa-2xl" style="color: #8692a7;"></i><i
+                class="fa-solid fa-question fa-beat fa-2xl" style="color: #8692a7;"></i><i
+                class="fa-solid fa-question fa-beat fa-2xl" style="color: #8692a7;"></i><i
+                class="fa-solid fa-question fa-beat fa-2xl" style="color: #8692a7;"></i><i
+                class="fa-solid fa-question fa-beat fa-2xl" style="color: #8692a7;"></i><i
+                class="fa-solid fa-question fa-beat fa-2xl" style="color: #8692a7;"></i><i
+                class="fa-solid fa-question fa-beat fa-2xl" style="color: #8692a7;"></i><i
+                class="fa-solid fa-question fa-beat fa-2xl" style="color: #8692a7;"></i><i
+                class="fa-solid fa-question fa-beat fa-2xl" style="color: #8692a7;"></i><i
+                class="fa-solid fa-question fa-beat fa-2xl" style="color: #8692a7;"></i><i
+                class="fa-solid fa-question fa-beat fa-2xl" style="color: #8692a7;"></i></div>
+        <!-- 검색창 -->
+        <div class="Card">
+            <div class="CardInner">
+                <labe class="munmar1" l>&nbsp;&nbsp;&nbsp;뭔말하려고 했지???...</labe>
+                <div class="container">
+                    <div class="Icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="#657789" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-search">
+                            <circle cx="11" cy="11" r="8" />
+                            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                        </svg>
+                    </div>
+                    <div class="InputContainer">
+                        <input class="input_box" placeholder="음....." onkeydown="checkEnter(event)" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 버튼 -->
+        <div class="input_btn">
+            <!-- <span type="button" class="btn btn-outline-primary btn-lg" onclick="location.href='./show_texts.html'"></span> -->
+            <span type="button" class="btn" onclick="location.href='./show_texts.html'"></span>
+        </div>
+
+    </div>
+
+    <div id="leaves1"></div>
+    <div id="leaves2"></div>
+    <div id="leaves3"></div>
+
+    <script>
+        function searchToggle(obj, evt) {
+            var container = $(obj).closest('.search-wrapper');
+            if (!container.hasClass('active')) {
+                container.addClass('active');
+                evt.preventDefault();
+            }
+            else if (container.hasClass('active') && $(obj).closest('.input-holder').length == 0) {
+                container.removeClass('active');
+                // clear input
+                container.find('.search-input').val('');
+            }
+        }
+        function createLeaf() {
+            const leaf = document.createElement('div');
+            leaf.classList.add('leaf');
+            leaf.style.left = Math.random() * 100 + '%';
+            leaf.style.top = Math.random() * -10 + '%';
+            leaf.style.transform = 'rotate(' + Math.random() * 360 + 'deg)';
+            document.getElementById('leaves1').appendChild(leaf);
+
+            setTimeout(() => {
+                leaf.remove();
+            }, 800);
+        }
+
+        function createLeaf2() {
+            const leaf = document.createElement('div');
+            leaf.classList.add('leaf');
+            leaf.style.left = Math.random() * 100 + '%';
+            leaf.style.top = Math.random() * -10 + '%';
+            leaf.style.transform = 'rotate(' + Math.random() * 360 + 'deg)';
+            document.getElementById('leaves2').appendChild(leaf);
+
+            setTimeout(() => {
+                leaf.remove();
+            }, 800);
+        }
+
+        function createLeaf3() {
+            const leaf = document.createElement('div');
+            leaf.classList.add('leaf');
+            leaf.style.left = Math.random() * 100 + '%';
+            leaf.style.top = Math.random() * -10 + '%';
+            leaf.style.transform = 'rotate(' + Math.random() * 360 + 'deg)';
+            document.getElementById('leaves3').appendChild(leaf);
+
+            setTimeout(() => {
+                leaf.remove();
+            }, 800);
+        }
+
+        setInterval(() => {
+            createLeaf();
+        }, 800);
+
+        setInterval(() => {
+            createLeaf2();
+        }, 800);
+
+        setInterval(() => {
+            createLeaf3();
+        }, 800);
+
+
+    </script>
+    <script src="https://kit.fontawesome.com/7eaa0f0d9a.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

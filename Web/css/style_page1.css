@@ -1,0 +1,615 @@
+.intro_bg {
+  width: 100vw;
+  height: 100vh;
+  /* background-color: black; */
+}
+
+.header_head {
+  color:rgb(255, 255, 255);
+  transition: color 0.2s;
+}
+.header_head:hover {
+  color: #4081F3;
+  transform: scale(1.05);
+}
+
+
+.svg1 {
+  width: 45%;
+  transform: translate(200px, 14%);
+}
+
+
+.rotate-text {
+  transform: rotate(-90deg) scale(2.2);
+  transform-origin: left top;
+  white-space: nowrap;
+  position: absolute;
+  top: 98%; 
+  left: 7%; 
+  color: white;
+  transition: color 0.3s;
+}
+
+
+.small-text {
+  font-size: 8px;
+  color: gray;
+  margin-right: 30px;
+}
+
+.word-spacing {
+  margin-right: 10px;
+  margin-top: 100px;
+}
+
+.wordword {
+  padding-right: 100px;
+}
+
+
+.custom-text {
+  position: absolute;
+  bottom: 10%;
+  right: 3%;
+  font-size: larger;
+  color: rgb(255, 255, 255);
+}
+
+.try-it-button {
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 1.2em;
+  padding-right: 50px;
+  transition: color 0.3s;
+}
+.try-it-button a {
+  color: white; 
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.try-it-button i {
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+.try-it-button:hover {
+  color:#6eada9;
+  transform: scale(1.02);
+}
+.try-it-button:hover a {
+  color: #6eada9;
+  transform: scale(1.02);
+}
+.try-it-button:hover i {
+  color: #6eada9;
+  transform: scale(1.02);
+}
+
+.right-border {
+  position: absolute;
+  top: 60%;
+  right: 500px;
+  height: 40vh;
+  width: 0.7px;
+  background-color: transparent;
+}
+
+.horizontal-line {
+  position: absolute;
+  top: 60%; 
+  right: 2%;
+  height: 0.7px;
+  width: 30%;
+  background-color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .rotate-text {
+    font-size: 13px;
+    top: 90%;
+  }
+  .svg1 {
+    width: 55%;
+    transform: translate(110px, 100%);
+  }
+  .small-text {
+    font-size: 5px;
+  }
+  .custom-text {
+    top: 20%;
+    right: 5%;
+    font-size: 15px;
+  }
+  .right-border {
+    top: 15.5%;
+    right: 60%;
+    height: 25%;
+    background-color: white;
+  }
+  .horizontal-line {
+    top: 45%; 
+    right: 1%;
+    height: 0.7px;
+    width: 40%;
+  }
+}
+
+
+.main1 {
+  height: 98vh;
+  background-color: rgba(0, 0, 0);
+}
+
+.content1 {
+  width: 50%;
+  transform: translate(440px, -3%);
+}
+
+.path2 {
+  stroke-dasharray: 7000;
+  stroke-dashoffset: 8000;
+  animation: draw 7s linear forwards;
+}
+
+.text1 {
+  position: absolute;
+  top: 170%;
+  left: 10%;
+  font-size: 22px;
+  font-weight: bold;
+}
+.text1-2 {
+  position: absolute;
+  top: 176%;
+  left: 10%;
+  font-size: 18px;
+}
+
+@keyframes draw1 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .content1 {
+    transform: translate(220px, -20%);
+  }
+  .text1 {
+    font-size: 20px;
+  }
+  .text1-2 {
+    font-size: 15px;
+  }
+}
+
+.main2 {
+  height: 95vh;
+  background-color: rgb(13, 14, 14);
+}
+
+.use {
+  background-color:black;
+}
+
+.main3 {
+  height: 110vh;
+  margin-left: 5%;
+}
+
+
+.footer {
+  height: 55vh;
+  background-color: black;
+}
+
+/* css 시작 */
+
+
+/* to top button */
+#scrollToTopButton {
+  position:fixed;
+  bottom:40px;
+  right:20px;
+  background-color: black;
+  border: none;
+  cursor: square;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#scrollToTopButton span {
+  font-size: 24px;
+  line-height: 4;
+  color: transparent;
+}
+
+#scrollToTopButton::before {
+  content: "^";
+  font-size: 33px;
+  line-height: 1.6;
+  color: rgb(158, 141, 214);
+  display:block;
+  transition: color 0.3s;
+}
+#scrollToTopButton:hover::before {
+  color: rgb(27, 72, 235);
+}
+
+#scrollToTopButton:hover {
+  transform: scale(1.1);
+}
+
+
+
+* {
+  text-decoration: none;
+  border-collapse: collapse;
+  margin:0px; 
+  padding: 0px;
+  color: white;
+}
+
+
+
+.nav-link {
+  color: white;
+  transition: color 0.3s;
+}
+.nav-link:hover {
+  color: #4081F3;
+  transform: scale(1.02);
+}
+
+.munmar {
+  height: 100px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.introuduction_box {
+  height: 600px;
+}
+
+#introduction1 {
+  background-color:rgb(250, 237, 237);
+  height: 40%;
+}
+
+#introduction2 {
+  height: 40%;
+  background-color: rgb(215, 215, 215);
+}
+
+.process {
+  height: 700px;
+  text-align: center;
+  line-height: 700px;
+}
+
+.main3_head{
+  text-align: center;
+  height: 100px;
+  line-height: 100px;
+}
+
+.main3_content {
+  text-align: center;
+  height: 700px;
+  line-height: 700px;
+}
+
+
+.content2 {
+  position: absolute;
+  cursor: pointer;
+  width: 70%;
+  transform: translate(350px, -1%);
+}
+
+.svg3:hover path {
+  stroke: #4081F3;
+}
+
+#next-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0; 
+}
+@media screen and (max-width: 768px) {
+  .svg3 {
+    transform: translate(50px, -2%);
+    width: 120%;
+  }
+}
+
+
+
+
+
+/* */
+.container.footer {
+  position: absolute;
+}
+
+.footer-text {
+  text-align: center;
+  position: absolute;
+  top: 55%;
+  left: 7%;
+  font-size: 14px;
+  color: rgb(175, 175, 175);
+  font-weight: bold;
+}
+
+.footer-text2 {
+  text-align: center;
+  position: absolute;
+  font-size: 25px;
+  font-weight: bold;
+  top: 40%;
+  left: 5%;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  transition: color 0.3s; 
+}
+.footer-text2 a {
+  color: white; 
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-text2 :hover {
+  animation: gradientShift 3s ease infinite;
+  color: rgb(140, 140, 200);
+  transform: scale(1.05);
+}
+
+
+.more-info {
+  text-align: left;
+  position: absolute;
+  font-size: 22px;
+  margin-top: 0;
+  color: white;
+  top: 27%;
+  left: 38%;
+}
+.our-name {
+  text-align: left;
+  font-size: 15px;
+  position: absolute;
+  top: 80%;
+  left: 2%;
+}
+.our-name a {
+  color: white;
+  text-decoration: none;
+}
+.our-name a:hover i {
+  background-image: linear-gradient(-140deg, rgb(86, 14, 252), #863cf5, #f347df, #f34e4e, #ffd119);
+  background-clip: text;
+  color: transparent; 
+  transform: scale(1.2, 1.2);
+  transition: color 0.5s;
+}
+
+.footer-horizontal-line1 {
+  position: absolute;
+  margin-top: 0;
+  top: 38%; 
+  left: 38%;
+  height: 0.7px;
+  width: 4%; 
+  background-color: transparent;
+}
+
+.Getintouch {
+  font-size: 22px;
+  text-align: left;
+  position: absolute;
+  margin-top: 0;
+  color: white;
+  top: 0.3%;
+  left: 340%;
+}
+.improvement-text {
+  font-size: 15px;
+}
+.footer-horizontal-line2 {
+  position: absolute;
+  margin-top: 0;
+  top: 38%; 
+  left: 80%;
+  height: 0.7px;
+  width: 4%; 
+  background-color: transparent;
+}
+
+
+.user-feedback {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+textarea {
+  border: 1px solid white;
+  background: transparent;
+  color: rgb(255, 255, 255); 
+  padding: 10px 10px;
+  width: 200px; 
+  height: 45px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.send-feedback-button {
+  background-color: transparent; 
+  color: rgb(140, 140, 200); 
+  border: 1px solid white; 
+  padding: 2px 2px;
+  width: 45px;
+  height: 45px;
+  margin-top: 10px; 
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:20px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50%;
+  padding: 0;
+}
+
+.send-feedback-button:hover {
+  background-image: linear-gradient(45deg, #8550dc, #83abd5, #e392e3, #4feaea);
+  color: rgb(33, 33, 252);
+  background-size: 400% 400%;
+  animation: gradientShift 3s ease infinite;
+  border: black;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.footer-horizontal-line {
+  position: absolute;
+  top: 85%;
+  left: 30%;
+  height: 0.25px;
+  width: 40%; 
+  background-color: rgb(134, 134, 134);
+}
+.copyright {
+  text-align: center;
+  position: absolute;
+  bottom: 5%;
+  right: 39%;
+  margin-top: 10px;
+  font-size: 10px;
+  color: white;
+}
+
+/* ------------ media로 바꾸기 -------------- */
+
+@media screen and (max-width: 768px) {
+
+  .footer-text {
+    top: 11%;
+    left: 43%;
+    font-size: 11px;
+  }
+  .footer-text2 {
+    font-size: 27px;
+    top: 1%;
+    left: 33%;
+  }
+  .more-info {
+    font-size: 20px;
+    top: 30%;
+    left: 13%;
+  }
+  .our-name {
+    font-size: 15px;
+    top: 98%;
+  }
+  .Getintouch {
+    font-size: 20px;
+    top: 0%;
+    left: 180%;
+  }
+  .improvement-text {
+    font-size: 15px;
+    margin-top: 90px;
+  }
+
+  .copyright {
+    bottom: 5%;
+    right: 20%;
+  }
+  .footer-horizontal-line {
+    top: 85%;
+    left: 25%;
+    height: 0.25px;
+    width: 40%; 
+    background-color: rgb(134, 134, 134);
+  }
+
+}
+
+.main2_svg {
+  margin-right: 100px;
+}
+
+.path1 {
+  stroke-dasharray: 5000;
+  stroke-dashoffset: 6000;
+  animation: draw 3s linear forwards;
+}
+
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.tryit_path {
+  width: 200px !important;
+  height: 300px !important;
+}
+
+.main2_svg {
+  margin-left: -130px;
+}
+
+.content3_svg{
+  margin-left: 300px;
+}
+
+.content1_svg{
+  margin-left: -180px;
+}
+
+.try_it {
+  margin-top: -480px;
+  margin-left: 410px;
+}
+
+
+.sogae1 {
+  color: antiquewhite;
+  width: 25%;
+  font-size: large;
+  margin-left: 57%;
+  margin-top: 14%;
+}
+
+.sogae2 {
+  color: antiquewhite;
+  width: 25%;
+  font-size:medium;
+  margin-left: 21%;
+  margin-top: 3.4%;
+}

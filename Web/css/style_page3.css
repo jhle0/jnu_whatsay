@@ -1,0 +1,376 @@
+/* show_texts css */
+
+@font-face{
+    font-family:'DNFBitBitv2';
+    font-style:normal;font-weight:400;src:url('//cdn.df.nexon.com/img/common/font/DNFBitBitv2.otf')format('opentype')}
+
+    @font-face {
+        font-family: 'EF_jejudoldam';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-EF@1.0/EF_jejudoldam.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'ImcreSoojin';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.3/ImcreSoojin.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        }
+
+
+
+.show_texts_body {
+    background-color: #201e22;
+}
+
+.show_title {
+    color: #dcc1b0;
+    display: flex;
+    margin-top: 5%; 
+    font-size: 3rem;
+    font-weight: bold;
+    justify-content: center;
+    font-family: 'ImcreSoojin';
+    /* font-family:'DNFBitBitv2'; */
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+}
+
+  /* toggle css */
+
+input[type=checkbox]{
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 100px;
+    height: 54px;
+    background: #23837c;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+}
+
+label:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 45px;
+    height: 45px;
+    background: #fff;
+    border-radius: 90px;
+    transition: 0.3s;
+}
+
+input:checked + label {
+    background: #6eada9;
+}
+
+input:checked + label:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+}
+
+label:active:after {
+    width: 85px;
+}
+
+.display_type_switch{
+    display: flex;
+    margin-left: 80%;
+}
+
+.toggle_word{
+    font-size: large;
+    color: #bacbda;
+    margin-left: 13px;
+    margin-right: 13px;
+    text-align: center;
+    padding : 13px 0;
+    font-family:'DNFBitBitv2';
+}
+
+  /* word box */
+
+.word_box {
+    margin-top: -15px;
+    z-index: 2;
+    color: #ffffff;
+    text-align : center;
+    line-height : 90px;
+    font-family: 'ImcreSoojin';
+    
+}
+
+.box{
+    background-color:  #869dab;;
+    width: 100px;
+    height: 90px;
+    border-radius:80px;
+    box-shadow: -5px -5px 5px -5px #333;
+    opacity: 0;
+}
+
+
+
+.line1 {
+    width: 80%;
+    margin: 40px auto;
+    display: flex;
+}
+
+.box1 {
+    width: 12%;
+    flex: 1;
+    margin: 0 2.5% 0 0;
+    z-index: 2;
+}
+
+.box2 {
+    width: 12%;
+    flex: 1;
+    margin: 0 2.5%;
+    z-index: 2;
+}
+
+.box3 {
+    width: 12%;
+    flex: 1;
+    margin: 0 2.5%;
+    z-index: 2;
+}
+
+.box4 {
+    width: 12%;
+    flex: 1;
+    margin: 0 2.5%;
+    z-index: 2;
+}
+
+.box5 {
+    width: 12%;
+    flex: 1;
+    margin: 0 0 0 2.5%;
+    z-index: 2;
+}
+
+.line2 {
+    width: 80%;
+    margin: 40px auto;
+    display: flex;
+}
+
+.box6 {
+    width: 12%;
+    flex: 1;
+    margin: 0 2.5% 0 0;
+    z-index: 2;
+}
+
+.box7 {
+    width: 12%;
+    flex: 1;
+    margin: 0 2.5%;
+    z-index: 2;
+}
+
+.box8 {
+    width: 12%;
+    flex: 1;
+    margin: 0 2.5%;
+    z-index: 2;
+}
+
+.box9 {
+    width: 12%;
+    flex: 1;
+    margin: 0 2.5%;
+    z-index: 2;
+}
+
+.box10 {
+    width: 12%;
+    flex: 1;
+    margin: 0 0 0 2.5%;
+    z-index: 2;
+}
+
+.line3 {
+    width: 80%;
+    margin: 40px auto;
+    display: flex;
+}
+
+.box11 {
+    width: 12%;
+    flex: 1;
+    margin: 0 2.5% 0 0;
+    z-index: 2;
+}
+
+.box12 {
+    width: 12%;
+    flex: 1;
+    margin: 0 2.5%;
+    z-index: 2;
+}
+
+.box13 {
+    width: 12%;
+    flex: 1;
+    margin: 0 2.5%;
+    z-index: 2;
+}
+
+.box14 {
+    width: 12%;
+    flex: 1;
+    margin: 0 2.5%;
+    z-index: 2;
+}
+
+.box15 {
+    width: 12%;
+    flex: 1;
+    margin: 0 0 0 2.5%;
+    z-index: 2;
+}
+
+.line4 {
+    width: 80%;
+    margin: 40px auto;
+    display: flex;
+}
+
+.box16 {
+    width: 12%;
+    flex: 1;
+    margin: 0 2.5% 0 0;
+    z-index: 2;
+}
+
+.box17 {
+    width: 12%;
+    flex: 1;
+    margin: 0 2.5%;
+    z-index: 2;
+}
+
+.box18 {
+    width: 12%;
+    flex: 1;
+    margin: 0 2.5%;
+    z-index: 2;
+}
+
+.box19 {
+    width: 12%;
+    flex: 1;
+    margin: 0 2.5%;
+    z-index: 2;
+}
+
+.box20 {
+    width: 12%;
+    flex: 1;
+    margin: 0 0 0 2.5%;
+    z-index: 2;
+}
+
+
+/* sentence box */
+
+.sent_box {
+    margin-top: -530px;
+}
+
+.l_box1{
+    background-color: #bacbdaef;
+    border-radius:80px;
+    width: 700px;
+    height: 70px;
+    margin-left: 5%;
+    z-index: 2;
+}
+
+.l_box2 {
+    background-color: #bacbdaef;
+    border-radius:80px;
+    width: 700px;
+    height: 70px;
+    margin-left: 30%;
+    z-index: 2;
+}
+
+.l_box3 {
+    background-color: #bacbdaef;
+    border-radius:80px;
+    width: 700px;
+    height: 70px;
+    margin-left: 12%;
+    z-index: 2;
+}
+
+.l_box4 {
+    background-color: #bacbdaef;
+    border-radius:80px;
+    width: 700px;
+    height: 70px;
+    margin-left: 40%;
+    z-index: 2;
+}
+
+.l_box5 {
+    background-color: #bacbdaef;
+    border-radius:80px;
+    width: 700px;
+    height: 70px;
+    z-index: 2;
+}
+
+.line5 {
+    width: 80%;
+    margin: 40px auto;
+    display: flex;
+}
+
+
+/* svg1 css */
+
+.svg1 {
+    width: 300px;
+    /* height: 40px; */
+    margin-top: -800px;
+    z-index: 1;
+}
+
+.svg2 {
+    width: 590px;
+    margin-top: -16px;
+    z-index: 1;
+}
+
+.path {
+    stroke-dasharray: 7000;
+    stroke-dashoffset: 8000;
+    animation: draw 7s linear infinite;
+}
+
+@keyframes draw {
+    to {
+    stroke-dashoffset: 0;
+    }
+} 
+
+
+
+
+
+
+
+
